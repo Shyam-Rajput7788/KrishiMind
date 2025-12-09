@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shyam\\OneDrive\\c program assignment\\Desktop\\KrishiMind\\API\\API.csproj": {}
+    "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shyam\\OneDrive\\c program assignment\\Desktop\\KrishiMind\\API\\API.csproj": {
+    "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shyam\\OneDrive\\c program assignment\\Desktop\\KrishiMind\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\shyam\\OneDrive\\c program assignment\\Desktop\\KrishiMind\\API\\API.csproj",
+        "projectPath": "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj",
         "packagesPath": "C:\\Users\\shyam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shyam\\OneDrive\\c program assignment\\Desktop\\KrishiMind\\API\\obj\\",
+        "outputPath": "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

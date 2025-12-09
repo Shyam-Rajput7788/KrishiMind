@@ -1,11 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "GtjV0qmuZbs=",
+  "dgSpecHash": "D2cJHMTQov8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\shyam\\OneDrive\\c program assignment\\Desktop\\KrishiMind\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shyam\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
     "C:\\Users\\shyam\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\shyam\\OneDrive\\Desktop\\KrishiMind\\KrishiMind\\KrishiMind-API\\API.csproj",
+      "targetGraphs": []
+    }
+  ]
 }
