@@ -1,1 +1,148 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success py-3">
+    <div class="container-fluid px-4">
+        <!-- Logo on left side -->
+        <a class="navbar-brand fw-bold fs-3 text-white active" routerLink="/home">
+            <i class="bi bi-flower1 me-2"></i>KrishiMind
+        </a>
+
+        <!-- Centered navigation items -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav fs-5 fw-medium">
+
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle text-light" routerLink="/products" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <!-- <i class="bi bi-journal-text me-1"></i> -->
+                        Products
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" routerLink="/products/agriculture-products">
+                                <!-- <i class="bi bi-book me-1"></i> -->
+                                Agriculture Products
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <!-- <i class="bi bi-journal-text me-1"></i> -->
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">
+                                <!-- <i class="bi bi-shield-check me-1"></i> -->
+                                Irrigation Installation
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-light" routerLink="/video-blog">
+                        <!-- <i class="bi bi-cart me-1"></i> -->
+                        Video & blog
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-light" routerLink="/government-schemes">
+                        <!-- <i class="bi bi-person-circle me-1"></i> -->
+                        Government Scheme
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-light" routerLink="/community">
+                        <!-- <i class="bi bi-person-circle me-1"></i> -->
+                        Community
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link text-light" routerLink="contact">
+                        <!-- <i class="bi bi-person-circle me-1"></i> -->
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right side - User actions -->
+        <div class="d-flex align-items-center">
+            <button type="button" class="btn btn-light btn-sm fw-medium me-2" routerLink="/login">
+                <i class="bi bi-box-arrow-in-right me-1"></i>Login
+            </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<style>
+    /* Better hover and active states */
+    .navbar-nav .nav-link {
+        transition: all 0.2s ease;
+        position: relative;
+    }
+
+    /* Inactive links are slightly transparent */
+    .navbar-nav .nav-link.text-white-100 {
+        color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    /* Hover effect - becomes fully white */
+    .navbar-nav .nav-link.text-light:hover {
+        color: rgb(225, 224, 224) !important;
+        transform: translateY(-1px);
+    }
+
+    /* Active link - fully white with underline */
+    .navbar-nav .nav-link.active {
+        color: white !important;
+        font-weight: 600;
+    }
+
+    .navbar-nav .nav-link.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: white;
+        border-radius: 1px;
+    }
+
+    /* Hover effect for active link */
+    .navbar-nav .nav-link.active:hover {
+        transform: translateY(-1px);
+    }
+
+    /* Dropdown item hover */
+    .dropdown-item:hover {
+        background-color: #f8f9fa;
+    }
+</style>
+
+<script>
+    // Add active state on click
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                // Remove active class from all links
+                navLinks.forEach(item => {
+                    item.classList.remove('active');
+                    item.classList.add('text-white-75');
+                    item.classList.remove('text-white');
+                });
+
+                // Add active class to clicked link
+                this.classList.add('active');
+                this.classList.remove('text-white-75');
+                this.classList.add('text-white');
+            });
+        });
+    });
+</script>

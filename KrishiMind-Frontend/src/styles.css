@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+/* Import Bootstrap Icons */
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+/* Global Styles for KrishiMind App */
+:root {
+  --krishi-green: #198754;
+  --krishi-green-dark: #146c43;
+  --krishi-green-light: #d1e7dd;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme styles */
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e0e0e0;
+  --bs-border-color: #444;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+[data-bs-theme="dark"] ::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--krishi-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--krishi-green-dark);
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  outline: 2px solid var(--krishi-green);
+  outline-offset: 2px;
+}
+
+[data-bs-theme="dark"] :focus-visible {
+  outline-color: var(--krishi-green-light);
+}
